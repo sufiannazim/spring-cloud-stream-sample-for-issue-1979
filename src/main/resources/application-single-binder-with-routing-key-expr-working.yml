@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    addresses: localhost:5672
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: foo
+        output:
+          destination: bar
+      rabbit:
+        bindings:
+          output:
+            producer:
+              routingKeyExpression: headers['test']
