@@ -1,0 +1,1 @@
+# spring-cloud-stream-sample-for-issue-1979
